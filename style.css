@@ -24,6 +24,39 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'DM Serif Display', serif;
 }
 
+img {
+    vertical-align: bottom;
+}
+
+/* header {
+    background-color: var(--Very-Light-Gray);
+} */
+
+header nav {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav input,
+nav #close-btn {
+    display: none;
+}
+
+nav input:checked + #burger-btn {
+    display: none;
+}
+
+nav input:checked ~ #close-btn {
+    display: unset;
+}
+
+#hero img {
+    width: 100%;
+}
 
 .attribution { 
     font-size: 12px; 
