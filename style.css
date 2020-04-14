@@ -28,9 +28,12 @@ img {
     vertical-align: bottom;
 }
 
-/* header {
-    background-color: var(--Very-Light-Gray);
-} */
+header {
+    position: fixed;
+    width: 100%;
+    height: 6em;
+    background: white;
+}
 
 header nav {
     width: 90%;
@@ -42,7 +45,8 @@ header nav {
 }
 
 nav input,
-nav #close-btn {
+nav #close-btn,
+nav .nav-links {
     display: none;
 }
 
@@ -51,11 +55,41 @@ nav input:checked + #burger-btn {
 }
 
 nav input:checked ~ #close-btn {
-    display: unset;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+nav input:checked ~ .nav-links {
+    display: block;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 6em;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Very-Dark-Violet);
+    background-image: url(./images/bg-pattern-mobile-nav.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 85%;
+    z-index: 1;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
 }
 
 #hero img {
     width: 100%;
+    margin-top: 6em;
 }
 
 .attribution { 
