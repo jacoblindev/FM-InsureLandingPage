@@ -46,7 +46,7 @@ header nav {
 
 nav input,
 nav #close-btn,
-nav .nav-links {
+nav ul {
     display: none;
 }
 
@@ -56,11 +56,9 @@ nav input:checked + #burger-btn {
 
 nav input:checked ~ #close-btn {
     display: block;
-    position: relative;
-    z-index: 2;
 }
 
-nav input:checked ~ .nav-links {
+nav input:checked ~ ul {
     display: block;
     list-style: none;
     position: absolute;
@@ -73,10 +71,9 @@ nav input:checked ~ .nav-links {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0 85%;
-    z-index: 1;
 }
 
-.nav-links li a {
+nav ul li a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -87,7 +84,7 @@ nav input:checked ~ .nav-links {
     margin-top: 2em;
 }
 
-.nav-links li:last-child a {
+nav ul li:last-child a {
     width: 90%;
     margin: 2em auto;
     padding: .6em 0;
