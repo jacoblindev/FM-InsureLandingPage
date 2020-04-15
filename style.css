@@ -91,9 +91,47 @@ nav ul li:last-child a {
     border: 1.5px solid white;
 }
 
+#hero {
+    color: white;
+    background-color: var(--Dark-Violet);
+    text-align: center;
+    background-image: url(./images/bg-pattern-intro-left-mobile.svg), url(./images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 0 58%, 100% 123%;
+}
+
 #hero img {
     width: 100%;
     margin-top: 6em;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+#hero p {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 85%;
+    margin: 1em auto 2em;
+    line-height: 1.8em;
+    color: var(--Very-Light-Gray);
+}
+
+#hero button {
+    cursor: pointer;
+    border: 1.5px solid white;
+    background-color: transparent;
+    color: white;
+    padding: .8em 2.4em;
+    margin-bottom: 8em;
+    font-size: .8rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
 }
 
 
