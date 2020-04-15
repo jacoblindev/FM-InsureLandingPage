@@ -134,7 +134,16 @@ nav ul li:last-child a {
     text-transform: uppercase;
 }
 
+#about {
+    text-align: center;
+    background-image: url(./images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 100% -57%;
+}
 
+#about div h1 {
+    font-size: 3rem;
+}
 
 .attribution { 
     font-size: 12px; 
