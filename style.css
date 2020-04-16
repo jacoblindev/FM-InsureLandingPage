@@ -134,15 +134,40 @@ nav ul li:last-child a {
     text-transform: uppercase;
 }
 
-#about {
-    text-align: center;
+.bg-pattern {
+    position: relative;
+}
+
+.bg-pattern::after {
+    content: " ";
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    top: 0;
     background-image: url(./images/bg-pattern-intro-right-mobile.svg);
     background-repeat: no-repeat;
-    background-position: 100% -57%;
+    background-position: 100% -200%;
+    z-index: -1;
+}
+
+#about {
+    text-align: center;
 }
 
 #about div h1 {
     font-size: 3rem;
+    margin-top: 3.6em;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+#about div h1::before {
+    content: "";
+    width: 43%;
+    position: absolute;
+    top: -70%;
+    left: 30%;
+    border-bottom: 1px solid var(--Dark-Grayish-Violet);
 }
 
 .attribution { 
