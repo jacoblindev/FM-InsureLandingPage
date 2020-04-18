@@ -134,11 +134,11 @@ nav ul li:last-child a {
     text-transform: uppercase;
 }
 
-.bg-pattern {
+/* .bg-pattern {
     position: relative;
-}
+} */
 
-.bg-pattern::after {
+/* .bg-pattern::after {
     content: " ";
     width: 100vw;
     height: 50vh;
@@ -148,7 +148,7 @@ nav ul li:last-child a {
     background-repeat: no-repeat;
     background-position: 100% -200%;
     z-index: -1;
-}
+} */
 
 #about {
     text-align: center;
@@ -157,18 +157,32 @@ nav ul li:last-child a {
 #about div h1 {
     font-size: 3rem;
     margin-top: 3.6em;
-    margin-bottom: 2em;
-    position: relative;
+    margin-bottom: 1.5em;
+    /* position: relative; */
 }
 
-#about div h1::before {
+/* #about div h1::before {
     content: "";
     width: 43%;
     position: absolute;
     top: -70%;
     left: 30%;
     border-bottom: 1px solid var(--Dark-Grayish-Violet);
+} */
+
+.feature h2 {
+    font-size: 1.6rem;
+    margin: 1.2em 0 .8em;
 }
+
+.feature p {
+    font-size: 1rem;
+    color: var(--Dark-Grayish-Violet);
+    margin: 1.2em 0 3.2em;
+    padding: 0 1.5em;
+}
+
+
 
 .attribution { 
     font-size: 12px; 
