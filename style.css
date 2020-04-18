@@ -182,6 +182,40 @@ nav ul li:last-child a {
     padding: 0 1.5em;
 }
 
+#CTA {
+    width: 85%;
+    height: 45vh;
+    margin: 8em auto;
+    text-align: center;
+    color: white;
+    background: url(./images/bg-pattern-how-we-work-mobile.svg);
+    background-color: var(--Dark-Violet);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#CTA h1 {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+}
+
+#CTA button {
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: .8em 2em;
+    margin: 3em 0 0;
+}
+
 
 
 .attribution { 
