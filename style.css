@@ -205,7 +205,6 @@ nav ul li:last-child a {
 }
 
 #CTA button {
-    cursor: pointer;
     font-size: .8rem;
     text-transform: uppercase;
     letter-spacing: .2em;
@@ -216,11 +215,61 @@ nav ul li:last-child a {
     margin: 3em 0 0;
 }
 
+footer {
+    text-align: center;
+    background: url(./images/bg-pattern-footer-mobile.svg);
+    background-color: var(--Very-Light-Gray);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+}
+
+footer .header {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #DDD;
+    padding: 5em 1em 1em;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: 2em auto;
+}
+
+footer .links {
+    padding: 1em;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+}
+
+footer .links label {
+    color: var(--Dark-Grayish-Violet);
+    display: block;
+    margin: 2em 0;
+}
+
+.links ul li {
+    list-style: none;
+    color: var(--Very-Dark-Violet);
+    margin: 1em 0;
+}
+
+.links li a {
+    text-decoration: none;
+    color: var(--Very-Dark-Violet);
+}
 
 
 .attribution { 
-    font-size: 12px; 
+    font-size: .8rem; 
     text-align: center; 
+    padding: 2em;
 }
 
 .attribution a { 
