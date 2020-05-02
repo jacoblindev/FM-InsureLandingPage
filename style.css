@@ -277,3 +277,7 @@ footer .links label {
     text-decoration: none;
     font-weight: bolder;
 }
+
+@media screen and (min-width: 420px) {
+    
+}
